@@ -1,25 +1,26 @@
 pipeline{
     
-    agent: any
+    agent any
 
     stages{
 
         stage('Build'){
-            script{
-
+            steps{
+                echo 'Construyendo la aplicación'
             }
         }
 
         stage('Test'){
             steps{
-
+                echo 'Arranca el proceso de pruebas unitarias'
             }
         }
 
         stage('Deploy'){
             steps{
-
+                echo 'Desplegando el area de desarrollo'
             }
         }
+
     }
 }
